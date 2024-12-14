@@ -2,7 +2,6 @@
 #include "BoardGame_Classes.h"
 
 #include "connectFour.h"
-#include "MinMaxPlayer.h"
 
 using namespace std;
 
