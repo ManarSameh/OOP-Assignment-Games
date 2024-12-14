@@ -153,7 +153,14 @@ void UltimateXO_Board<T>::display_board() {
         for (int row = 0; row < 3; row++) {
             for (int subY = 0; subY < 3; subY++) {
                 for (int col = 0; col < 3; col++) {
-                    cout << subBoards[subX][subY].get_cell(row, col) << " ";
+                    if(subBoards[subX][subY].get_cell(row, col) == 0) 
+                    {
+                        cout << "- ";
+                    }
+                    else
+                    {
+                        cout << subBoards[subX][subY].get_cell(row, col) << " ";
+                    }
                 }
                 cout << " | ";
             }
