@@ -72,7 +72,6 @@ int main() {
     B->display_board();
     B->display_winner();
 
-    // Cleanup
     delete B;
     for (int i = 0; i < 2; ++i) {
         delete players[i];
