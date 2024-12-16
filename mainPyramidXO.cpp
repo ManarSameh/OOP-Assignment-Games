@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int pyramidXO() {
     int choice;
     Player<char>* players[2];
     auto* B = new PyramidBoard<char>();

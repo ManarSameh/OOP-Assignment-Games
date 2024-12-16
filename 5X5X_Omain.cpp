@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int XO_5x5() {
     int choice;
     Player<char>* players[2];
     X_O_Board<char>* B = new X_O_Board<char>();

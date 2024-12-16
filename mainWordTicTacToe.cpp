@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int wordXO() {
     int choice;
     Player<char>* players[2];
     auto* B = new WordTicTacToeBoard<char>("dic.txt");

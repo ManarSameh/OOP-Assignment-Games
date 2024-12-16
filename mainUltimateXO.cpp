@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int UltimateXO() {
     int choice;
     UltimateXO_Player<char>* players[2];
     UltimateXO_Board<char>* ultimateBoard = new UltimateXO_Board<char>();

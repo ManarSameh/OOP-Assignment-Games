@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int connect4() {
     int choice;
     Player<char>* players[2];
     connectFour<char>* B = new connectFour<char>();

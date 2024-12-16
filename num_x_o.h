@@ -154,24 +154,15 @@ NUM_X_O_Random_Player<T>::NUM_X_O_Random_Player(T symbol) : RandomPlayer<T>(symb
 
 template <typename T>
 void NUM_X_O_Random_Player<T>::getmove(int& x, int& y) {
-    x = rand() % this->dimension;
-    y = rand() % this->dimension;
     T sym;
-    do {
+    do 
+    {    
+        x = rand() % this->dimension;
+        y = rand() % this->dimension;
         sym = rand() % 10;
-    } while(this->visted[sym]);
-    if(this->symbol % 2 == sym % 2)
-    {
-        this->symbol = sym;
-    }
-    else if (sym != 9){
-        this->symbol = sym + 1;
-    }
-    else
-    {
-        this->symbol = 8;
-    }
-    this->visted[sym] = true;
+    }while((!(this->symbol % 2 == sym % 2 && sym < 10)) || visted[sym]);
+    this->symbol = sym;
+    visted[sym] = true;
 }
 
 

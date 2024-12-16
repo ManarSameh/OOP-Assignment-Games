@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int SUS() {
     int choice;
     Player<char>* players[2];
     SUS_Board<char>* B = new SUS_Board<char>();
